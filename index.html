@@ -11,10 +11,91 @@
      <!-- tailwind and daisyUI -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
      <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- Manrope fonts -->
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+      </style>
+        <style>
+          .manrope-font {
+          font-family: "Manrope", sans-serif;
+        }
+        </style>
+     
      
 </head>
-<body>
-    <h1 class="bg-slate-400 text-6xl text-center">hello</h1>
+<body class="manrope-font">
+    <header class="bg-gradient-to-b from-[rgba(255,255,255,0)] to-white container mx-auto" >
+      <div class="navbar bg-base-100 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li> 
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          
+            <div class="flex space-x-2">
+              <i class="fa-solid fa-arrow-right btn btn-circle bg-yellow-500 text-black  text-2xl rounded-full -rotate-45"></i>
+            <a class="text-3xl font-bold">Rinterio</a>
+            </div>
+          
+        </div>
+        <div class="navbar-center hidden lg:flex ">
+          <ul class="menu menu-horizontal px-1 text-xl text-gray-600">
+              <li class="hover:font-bold text-black duration-300 easy-in-out"><a>Home</a></li> 
+              <li class="hover:font-bold text-black duration-300 easy-in-out"><a>Services</a></li>
+              <li class="hover:font-bold text-black duration-300 easy-in-out"><a>Portfolio</a></li>
+              <li class="hover:font-bold text-black duration-300 easy-in-out"><a>Blogs</a></li>
+              <li class="hover:font-bold text-black duration-300 easy-in-out"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        
+
+        <div class="navbar-end sm:flex sm:space-x-2 hidden">
+          <button class="btn btn-circle bg-white text-xl ">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="btn btn-circle bg-white text-xl ">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <a class="btn btn-warning  text-xl font-bold text-[800] rounded-full ">
+            Book Consult 
+            <i class="fa-solid fa-arrow-right p-1 bg-black text-white rounded-full -rotate-45"></i></a>
+        </div>
+
+          
+        
+      </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
+
+
+
