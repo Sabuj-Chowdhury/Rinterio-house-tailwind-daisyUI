@@ -39,6 +39,7 @@
         theme: {
           extend: {
             colors: {
+              body_color: "rgba(244,244,244,1)",
               primary: "#ABEF5F",
               banner_title: "#212121",
               nav_item_color: "#737373",
@@ -52,18 +53,20 @@
     </script>
   </head>
 
-  <body class="manrope">
-    <header>
+  <body class="manrope body_color">
+    <header class="bg-gradient-to-b from-[rgba(255,255,255,0)] to-white">
       <nav class="sm:container w-10/11 mt-8 mx-auto">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <i
-              class="fa-solid fa-arrow-right btn btn-circle bg-primary text-3xl -rotate-45"
+              class="fa-solid fa-arrow-right btn btn-circle pointer-events-none bg-primary text-3xl -rotate-45"
             ></i>
             <a class="text-3xl font-bold">Rinterio</a>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-xl text-nav_item_color">
+            <ul
+              class="menu menu-horizontal px-1 text-gray-900 text-xl text-nav_item_color"
+            >
               <li class="hover:font-bold text-black duration-300 ease-in-out">
                 <a>Home</a>
               </li>
@@ -82,7 +85,7 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <div class="lg:flex space-x-1 hidden">
+            <div class="lg:flex space-x-1 pointer-events-none hidden">
               <button class="btn btn-circle bg-white text-xl">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
@@ -147,7 +150,7 @@
             sophistication, featuring weathered wood, sleek metal accents, and
             large windows that flood the space with natural light.
           </p>
-          <div class="text-center">
+          <div class="text-center pointer-events-none">
             <button
               class="btn rounded-full w-[90%] sm:w-auto mt-4 text-lg font-semibold bg-primary opacity-80"
             >
