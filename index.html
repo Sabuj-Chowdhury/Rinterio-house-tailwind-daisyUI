@@ -43,6 +43,7 @@
               primary: "#ABEF5F",
               banner_title: "#212121",
               nav_item_color: "#737373",
+              p_about:'#494949',
             },
             fontFamily: {
               manrope: "Manrope",
@@ -51,12 +52,13 @@
         },
       };
     </script>
+    <link rel="stylesheet" href="style.css">
   </head>
 
-  <body class="manrope body_color">
+  <body class="manrope>
     <header class="bg-gradient-to-b from-[rgba(255,255,255,0)] to-white">
       <nav class="sm:container w-10/11 mt-8 mx-auto">
-        <div class="navbar bg-base-100">
+        <div class="navbar">
           <div class="navbar-start">
             <i
               class="fa-solid fa-arrow-right btn btn-circle pointer-events-none bg-primary text-3xl -rotate-45"
@@ -150,7 +152,7 @@
             sophistication, featuring weathered wood, sleek metal accents, and
             large windows that flood the space with natural light.
           </p>
-          <div class="text-center pointer-events-none">
+          <div class="text-center pointer-events-none md:mb-28">
             <button
               class="btn rounded-full w-[90%] sm:w-auto mt-4 text-lg font-semibold bg-primary opacity-80"
             >
@@ -163,7 +165,67 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main class="bg-body_color">
+      <!-- about us section -->
+      <section >
+        <div class="py-8 px-4">
+          <img class="hidden lg:block" src="./assets/Vector.png" alt="" />
+        </div>
+        <!-- container div -->
+        <div class="container mx-auto flex justify-center items-center gap-3">
+          <!-- left div -->
+           <div  class="w-1/2">
+            <button class="btn  bg-white text-p_about rounded-full text-lg font-semibold mb-2">
+              <i class="fa-solid fa-arrow-right"></i>
+              About Us
+            </button>
+            <h2 class="text-4xl font-extrabold text-banner_title mb-6 w-9/12">
+              We design thoughtful, liveable spaces
+            </h2>
+            <p class="text-p_about text-lg mb-6">
+              The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.
+            </p>
+            <!-- wrapper -->
+            <div class="flex flex-col gap-6 " >       
+              <!-- cart-1 -->
+            <div class="bg-white rounded-2xl p-8 flex gap-4">
+              <img src="./assets/commercial.png" alt="">
+              <!-- text div -->
+               <div>
+                <h4 class="text-lg font-semibold text-p_about">
+                  Commercial
+                </h4>
+                <p class="text-lg text-nav_item_color">
+                  The barn house captivates with its blend of rustic charm and modern.
+                </p>
+               </div>
+            </div>
+            <!-- cart-2 -->
+            <div class="bg-white rounded-2xl p-5 flex gap-4">
+              <img src="./assets/residential.png" alt="">
+              <!-- text div -->
+               <div>
+                <h4 class="text-lg font-semibold text-p_about">
+                  Residential
+                </h4>
+                <p class="text-lg text-nav_item_color">
+                  The barn house captivates with its blend of rustic charm and modern.
+                </p>
+               </div>
+
+
+            </div>
+            </div>
+           </div>
+
+           <!-- right div -->
+            <div class="w-1/2">
+              <img src="./assets/Rectangle.png" alt="">
+            </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
