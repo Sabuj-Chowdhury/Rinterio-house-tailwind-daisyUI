@@ -40,6 +40,8 @@
           extend: {
             colors: {
               primary: "#ABEF5F",
+              banner_title: "#212121",
+              nav_item_color: "#737373",
             },
             fontFamily: {
               manrope: "Manrope",
@@ -50,7 +52,7 @@
     </script>
   </head>
 
-  <body>
+  <body class="manrope">
     <header>
       <nav class="sm:container w-10/11 mt-8 mx-auto">
         <div class="navbar bg-base-100">
@@ -61,7 +63,7 @@
             <a class="text-3xl font-bold">Rinterio</a>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-xl text-gray-600">
+            <ul class="menu menu-horizontal px-1 text-xl text-nav_item_color">
               <li class="hover:font-bold text-black duration-300 ease-in-out">
                 <a>Home</a>
               </li>
@@ -104,7 +106,7 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl right-0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl text-nav_item_color right-0"
               >
                 <li class="hover:font-bold text-black duration-300 ease-in-out">
                   <a>Home</a>
@@ -126,6 +128,37 @@
           </div>
         </div>
       </nav>
+      <div class="container mx-auto flex justify-center items-center flex-col">
+        <!-- image div -->
+        <div>
+          <img src="./assets/banner.png" alt="" />
+        </div>
+        <!-- text div -->
+        <div class="sm:w-[75%] mt-7 mb-5">
+          <h2
+            class="text-6xl text-banner_title font-bold text-center mx-auto mb-3"
+          >
+            A barn house of this design has a striking appearance
+          </h2>
+          <p
+            class="text-[#494949] text-sm font-normal text-center w-[85%] mx-auto"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <div class="text-center">
+            <button
+              class="btn mt-4 text-lg font-semibold bg-primary opacity-80"
+            >
+              View Details
+              <i
+                class="fa-solid fa-arrow-right p-1 bg-primary text-black rounded-full -rotate-45"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
