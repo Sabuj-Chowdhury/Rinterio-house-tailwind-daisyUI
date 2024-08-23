@@ -168,28 +168,32 @@
     <main class="bg-body_color">
       <!-- about us section -->
       <section >
-        <div class="py-8 px-4">
+        <div class="md:py-8 md:px-4 p-4">
           <img class="hidden lg:block" src="./assets/Vector.png" alt="" />
         </div>
         <!-- container div -->
-        <div class="container mx-auto flex justify-center items-center gap-3">
+        <div class="container mx-auto md:flex  justify-center items-center gap-3">
           <!-- left div -->
-           <div  class="w-1/2">
-            <button class="btn  bg-white text-p_about rounded-full text-lg font-semibold mb-2">
-              <i class="fa-solid fa-arrow-right"></i>
-              About Us
-            </button>
-            <h2 class="text-4xl font-extrabold text-banner_title mb-6 w-9/12">
+           <div  class="w-full md:w-1/2">
+            <div class="text-center">
+              <button class="btn  bg-white text-p_about rounded-full text-lg tex font-semibold mb-2 ">
+                <i class="fa-solid fa-arrow-right" ></i>
+                About Us
+              </button>
+            </div>
+            <h2 class="text-4xl font-extrabold text-banner_title mb-6 md:w-9/12 text-center">
               We design thoughtful, liveable spaces
             </h2>
-            <p class="text-p_about text-lg mb-6">
+            <p class="text-p_about text-lg mb-6 text-center">
               The barn house captivates with its blend of rustic charm and 
               modern sophistication, featuring weathered wood, sleek metal accents.
             </p>
-            <!-- wrapper -->
-            <div class="flex flex-col gap-6 " >       
+           <!-- mobile responsive wrapper -->
+            <div  class="flex justify-center">
+               <!-- wrapper -->
+            <div class="flex flex-col gap-6 w-11/12 ">       
               <!-- cart-1 -->
-            <div class="bg-white rounded-2xl p-8 flex gap-4">
+            <div class="bg-white rounded-2xl p-8 flex gap-4" >
               <img src="./assets/commercial.png" alt="">
               <!-- text div -->
                <div>
@@ -202,7 +206,7 @@
                </div>
             </div>
             <!-- cart-2 -->
-            <div class="bg-white rounded-2xl p-5 flex gap-4">
+            <div class="bg-white rounded-2xl p-8 flex gap-4 mb-6" >
               <img src="./assets/residential.png" alt="">
               <!-- text div -->
                <div>
@@ -217,12 +221,16 @@
 
             </div>
             </div>
+            </div>
            </div>
 
-           <!-- right div -->
-            <div class="w-1/2">
-              <img src="./assets/Rectangle.png" alt="">
+           <!-- image wrapper -->
+           <div class="flex justify-center">
+            <!-- right div -->
+            <div class="md:w-1/2 w-11/12">
+              <img class="w-full h-80 object-cover rounded-3xl" src="./assets/Rectangle.png" alt="">
             </div>
+           </div>
         </div>
       </section>
     </main>
