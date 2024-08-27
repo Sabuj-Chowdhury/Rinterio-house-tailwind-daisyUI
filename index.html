@@ -64,7 +64,7 @@
         <div class="navbar">
           <div class="navbar-start">
             <i
-              class="fa-solid fa-arrow-right btn btn-circle pointer-events-none bg-primary text-3xl -rotate-45"
+              class="fa-solid fa-arrow-right btn btn-circle pointer-events-none bg-primary text-3xl -rotate-45 mr-2 border-none outline-none"
             ></i>
             <a class="text-3xl font-bold">Rinterio</a>
           </div>
@@ -73,36 +73,38 @@
               class="menu menu-horizontal px-1 text-gray-900 text-xl text-nav_item_color"
             >
               <li class="hover:font-bold text-black duration-300 ease-in-out">
-                <a>Home</a>
+                <a href="#home">Home</a>
               </li>
               <li class="hover:font-bold text-black duration-300 ease-in-out">
-                <a>Services</a>
+                <a href="#Services">Services</a>
               </li>
               <li class="hover:font-bold text-black duration-300 ease-in-out">
-                <a>Portfolio</a>
+                <a href="#Portfolio">Portfolio</a>
               </li>
               <li class="hover:font-bold text-black duration-300 ease-in-out">
-                <a>Blogs</a>
+                <a href="#Blogs">Blogs</a>
               </li>
               <li class="hover:font-bold text-black duration-300 ease-in-out">
-                <a>Contact Us</a>
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
           <div class="navbar-end">
-            <div class="lg:flex space-x-1 pointer-events-none hidden">
+            <div class="lg:flex space-x-1 hidden">
               <button class="btn btn-circle bg-white text-xl">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
               <button class="btn btn-circle bg-white text-xl">
                 <i class="fa-solid fa-cart-shopping"></i>
               </button>
-              <a class="btn bg-primary text-xl font-bold rounded-full">
+              <a
+                class="btn bg-primary text-xl font-bold rounded-full border-none outline-none"
+                href="#contact"
+              >
                 Book Consult
                 <i
-                  class="fa-solid fa-arrow-right p-1 bg-black text-white rounded-full -rotate-45"
-                >
-                </i>
+                  class="fa-solid fa-arrow-right h-7 w-7 bg-black text-white flex justify-center items-center rounded-full -rotate-45"
+                ></i>
               </a>
             </div>
             <div class="dropdown">
@@ -118,19 +120,19 @@
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl text-nav_item_color right-0"
               >
                 <li class="hover:font-bold text-black duration-300 ease-in-out">
-                  <a>Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li class="hover:font-bold text-black duration-300 ease-in-out">
-                  <a>Services</a>
+                  <a href="#Services">Services</a>
                 </li>
                 <li class="hover:font-bold text-black duration-300 ease-in-out">
-                  <a>Portfolio</a>
+                  <a href="#Portfolio">Portfolio</a>
                 </li>
                 <li class="hover:font-bold text-black duration-300 ease-in-out">
-                  <a>Blogs</a>
+                  <a href="#Blogs">Blogs</a>
                 </li>
                 <li class="hover:font-bold text-black duration-300 ease-in-out">
-                  <a>Contact Us</a>
+                  <a href="#contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -138,7 +140,10 @@
         </div>
       </nav>
       <!-- banner section -->
-      <div class="container mx-auto flex justify-center items-center flex-col">
+      <div
+        class="container mx-auto flex justify-center items-center flex-col"
+        id="home"
+      >
         <!-- image div -->
         <div>
           <img src="./assets/banner.png" alt="" />
@@ -151,19 +156,28 @@
             A barn house of this design has a striking appearance
           </h2>
           <p
-            class="text-p_about text-sm font-normal text-center w-[85%] mx-auto"
+            class="text-p_about text-lg font-normal text-center w-[85%] mx-auto mt-4"
           >
-            The barn house captivates with its blend of rustic charm and modern
-            sophistication, featuring weathered wood, sleek metal accents, and
-            large windows that flood the space with natural light.
+            A barn house of this design stands out with its striking appearance,
+            blending rustic charm with modern elegance. The soaring ceilings,
+            exposed beams, and large windows create a bright, spacious
+            atmosphere that feels both timeless and contemporary.
           </p>
-          <div class="text-center pointer-events-none md:mb-28">
-            <button
-              class="btn rounded-full w-[90%] lg:w-auto mt-4 text-lg font-semibold bg-primary opacity-80"
+          <div class="mt-6 flex justify-center w-full mb-10">
+            <!-- <button
+              class="btn rounded-full w-[90%] lg:w-auto mt-4 text-lg font-semibold bg-primary border-none outline-none"
             >
               View Details
               <i
                 class="fa-solid fa-arrow-right p-1 bg-primary text-black rounded-full -rotate-45"
+              ></i>
+            </button> -->
+            <button
+              class="p-3 bg-primary bg-opacity-50 text-footer font-bold rounded-3xl flex justify-center items-center gap-2 w-full sm:w-auto"
+            >
+              View Details
+              <i
+                class="fa-solid fa-arrow-right h-7 w-7 bg-primary text-white flex justify-center items-center rounded-full -rotate-45"
               ></i>
             </button>
           </div>
@@ -262,7 +276,7 @@
           </figure>
         </div>
         <!-- another part -->
-        <div class="p-3 flex gap-8 flex-col lg:flex-row">
+        <div class="p-3 flex gap-8 flex-col lg:flex-row" id="Services">
           <!-- text part -->
           <div class="flex-1">
             <hr />
@@ -298,7 +312,7 @@
                 </div>
                 <!-- text -->
                 <div class="mt-5 w-10/12">
-                  <h3 class="font-bold text-2xl">Non-Toxic</h3>
+                  <h3 class="font-bold text-2xl">Zero VOC</h3>
                   <p class="font-normal text-lg mt-3">
                     It all begins with an idea. Maybe you want to launch a
                     business. Or maybe you have a creative project to share with
@@ -317,7 +331,7 @@
                 </div>
                 <!-- text -->
                 <div class="mt-5 w-10/12">
-                  <h3 class="font-bold text-2xl">Non-Toxic</h3>
+                  <h3 class="font-bold text-2xl">Water-Based</h3>
                   <p class="font-normal text-lg mt-3">
                     It all begins with an idea. Maybe you want to launch a
                     business. Or maybe you have a creative project to share with
@@ -336,7 +350,7 @@
                 </div>
                 <!-- text -->
                 <div class="mt-5 w-10/12">
-                  <h3 class="font-bold text-2xl">Non-Toxic</h3>
+                  <h3 class="font-bold text-2xl">No Polyurethane Odor</h3>
                   <p class="font-normal text-lg mt-3">
                     It all begins with an idea. Maybe you want to launch a
                     business. Or maybe you have a creative project to share with
@@ -355,7 +369,7 @@
                 </div>
                 <!-- text -->
                 <div class="mt-5 w-10/12">
-                  <h3 class="font-bold text-2xl">Non-Toxic</h3>
+                  <h3 class="font-bold text-2xl">Ingredient Transparency</h3>
                   <p class="font-normal text-lg mt-3">
                     It all begins with an idea. Maybe you want to launch a
                     business. Or maybe you have a creative project to share with
@@ -374,7 +388,7 @@
                 </div>
                 <!-- text -->
                 <div class="mt-5 w-10/12">
-                  <h3 class="font-bold text-2xl">Non-Toxic</h3>
+                  <h3 class="font-bold text-2xl">Exceptional Coverage</h3>
                   <p class="font-normal text-lg mt-3">
                     It all begins with an idea. Maybe you want to launch a
                     business. Or maybe you have a creative project to share with
@@ -505,7 +519,7 @@
       </section>
 
       <!-- Our Latest Portfolio section -->
-      <section class="bg-white p-4">
+      <section class="bg-white p-4" id="Portfolio">
         <!-- container div -->
         <div class="container mx-auto">
           <!-- text div -->
@@ -610,7 +624,7 @@
       </section>
 
       <!-- article and news section -->
-      <section class="container mx-auto p-6">
+      <section class="container mx-auto p-6" id="Blogs">
         <!-- text div -->
         <div class="lg:w-1/2 mx-auto mt-16 text-center">
           <button
@@ -818,7 +832,7 @@
         <!-- logo -->
         <div class="lg:w-1/2 lg:mx-auto text-center">
           <i
-            class="fa-solid fa-arrow-right btn btn-circle pointer-events-none bg-primary text-3xl -rotate-45"
+            class="fa-solid fa-arrow-right btn btn-circle pointer-events-none bg-primary text-3xl -rotate-45 mr-2 border-none outline-none"
           ></i>
           <a class="text-3xl text-footer_logo font-bold">Rinterio</a>
           <p class="text-nav_item_color text-sm font-normal mt-4">
